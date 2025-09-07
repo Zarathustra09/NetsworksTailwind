@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Netsworks Advanced Electronics Fabrication</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../tailwind.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#BD0569',
+            secondary: '#E6E9EF',
+            accent: '#685F63',
+            success: '#185B18'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-x-hidden transition-colors duration-300">
+
+<!-- Header -->
+<header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-secondary dark:border-gray-700 transition-colors duration-300">
+  <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <img src="../NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-16 h-16" />
+        <span class="text-xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Netsworks</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#" onclick="history.back()" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">← Back to Home</a>
+        <a href="#projects" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Projects</a>
+        <a href="#capabilities" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Capabilities</a>
+
+        <!-- Dark Mode Toggle -->
+        <div class="flex items-center space-x-3">
+          <div class="relative">
+            <div class="dark-mode-toggle" id="darkModeToggle">
+              <div class="absolute inset-0 flex items-center justify-between px-2">
+                <svg class="sun-icon w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 17.5a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM12 1.5a.5.5 0 01.5.5v2a.5.5 0 01-1 0V2a.5.5 0 01.5-.5zM21 11.5h-2a.5.5 0 010-1h2a.5.5 0 010 1zM5 11.5H3a.5.5 0 010-1h2a.5.5 0 010 1zM18.364 18.364a.5.5 0 01-.707 0l-1.414-1.414a.5.5 0 11.707-.707l1.414 1.414a.5.5 0 010 .707zM7.05 7.05a.5.5 0 01-.707 0L4.929 5.636a.5.5 0 11.707-.707L7.05 6.343a.5.5 0 010 .707zM18.364 5.636a.5.5 0 010 .707l-1.414 1.414a.5.5 0 11-.707-.707l1.414-1.414a.5.5 0 01.707 0zM7.05 16.95a.5.5 0 010 .707l-1.414 1.414a.5.5 0 11-.707-.707l1.414-1.414a.5.5 0 01.707 0zM12 22.5a.5.5 0 01-.5-.5v-2a.5.5 0 011 0v2a.5.5 0 01-.5.5z"/>
+                </svg>
+                <svg class="moon-icon w-4 h-4 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="bg-gradient-to-r from-primary to-success hover:from-primary/90 hover:to-success/90 text-white px-6 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="pt-32 pb-20 bg-gradient-to-br from-secondary/30 dark:from-gray-800/30 to-white dark:to-gray-900 transition-colors duration-300">
+  <div class="container mx-auto px-6">
+    <div class="text-center max-w-4xl mx-auto">
+      <h1 class="text-6xl lg:text-7xl font-bold leading-tight mb-6 text-gray-900 dark:text-white fade-in">
+        Our
+        <span class="bg-gradient-to-r from-primary via-primary to-success bg-clip-text text-transparent">
+          Portfolio
+        </span>
+      </h1>
+      <p class="text-xl text-accent dark:text-gray-300 mb-8 fade-in">
+        Explore our comprehensive collection of precision-engineered solutions across electronics fabrication, mechanical engineering, and IT infrastructure. Each project showcases our commitment to quality, innovation, and technical excellence.
+      </p>
+
+      <!-- Stats -->
+      <div class="grid md:grid-cols-4 gap-6 mt-12 fade-in">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg transition-colors duration-300">
+          <h3 class="text-3xl font-bold text-primary mb-2">50+</h3>
+          <p class="text-accent dark:text-gray-300">Projects Completed</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg transition-colors duration-300">
+          <h3 class="text-3xl font-bold text-success mb-2">15+</h3>
+          <p class="text-accent dark:text-gray-300">Industry Sectors</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg transition-colors duration-300">
+          <h3 class="text-3xl font-bold text-primary mb-2">99.9%</h3>
+          <p class="text-accent dark:text-gray-300">Quality Rating</p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg transition-colors duration-300">
+          <h3 class="text-3xl font-bold text-success mb-2">5+</h3>
+          <p class="text-accent dark:text-gray-300">Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Filter Section -->
+<section class="py-12 bg-white dark:bg-gray-900 transition-colors duration-300">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <button class="filter-btn active px-6 py-3 rounded-full font-semibold transition-colors duration-300" data-filter="all">
+        All Projects
+      </button>
+      <button class="filter-btn px-6 py-3 rounded-full font-semibold bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors duration-300" data-filter="pcb">
+        PCB Design
+      </button>
+      <button class="filter-btn px-6 py-3 rounded-full font-semibold bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors duration-300" data-filter="mechanical">
+        Mechanical Fab
+      </button>
+      <button class="filter-btn px-6 py-3 rounded-full font-semibold bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors duration-300" data-filter="mechanical-consumables">
+        Mechanical Consumables
+      </button>
+      <button class="filter-btn px-6 py-3 rounded-full font-semibold bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors duration-300" data-filter="assembly">
+        Assembly
+      </button>
+      <button class="filter-btn px-6 py-3 rounded-full font-semibold bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors duration-300" data-filter="it">
+        IT Solutions
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Grid -->
+<section id="projects" class="py-20 bg-secondary/10 dark:bg-gray-800/10 transition-colors duration-300">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projectsGrid">
+
+      <!-- PCB Projects -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="pcb">
+        <div class="relative h-64 overflow-hidden">
+          <img src="NETWORKS COMPANY PROFILE/pcb/pcb_design.png" alt="Medical Device PCB" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-primary/90 text-white px-3 py-1 rounded-full text-sm font-medium">PCB Design</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Cloud Migration Project</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Complete cloud migration from on-premise to AWS with hybrid infrastructure and disaster recovery.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">AWS</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Hybrid Cloud</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">DR Ready</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('cloud-migration')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mechanical Consumables Projects -->
+      <!-- ESD Green Matt -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical-consumables">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/esd_green_matt.png" alt="Anti-Static Green Matt" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-success/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Consumables</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Anti-Static Green Matt</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Professional grade anti-static work surface protection for sensitive electronic components and PCB assembly operations.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">ESD Safe</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Cleanroom</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Durable</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('esd-matt')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finger Cots -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical-consumables">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/fingers.png" alt="Finger Protection Cots" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-success/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Consumables</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Finger Protection Cots</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Anti-static finger cots for precise handling of electronic components while maintaining dexterity and protection.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Anti-Static</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Latex-Free</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Precision</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('finger-cots')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blue Electronics Gloves -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical-consumables">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/gloves_blue.png" alt="Blue Electronics Gloves" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-success/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Consumables</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Blue Electronics Gloves</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Professional grade disposable gloves designed for electronics handling with excellent tactile sensitivity and ESD protection.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">ESD Safe</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Nitrile</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Powder-Free</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('blue-gloves')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- White Electronics Gloves -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical-consumables">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/gloves_white.png" alt="White Electronics Gloves" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-success/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Consumables</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">White Electronics Gloves</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Clean room grade white gloves for high-precision electronics work requiring maximum cleanliness and static protection.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Cleanroom</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Low-Particle</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">ESD Safe</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('white-gloves')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kimwipes -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical-consumables">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/kimwipes.png" alt="Kimwipes Cleaning Wipes" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-success/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Consumables</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Kimwipes Cleaning Wipes</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Premium lint-free wipes for cleaning sensitive electronic surfaces, optical components, and precision instruments without contamination.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Lint-Free</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Low-Particle</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Absorbent</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('kimwipes')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electronic Strap -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical-consumables">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/strap.png" alt="Electronic Wrist Strap" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-success/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Consumables</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Electronic Wrist Strap</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Professional anti-static wrist strap system for grounding personnel during electronic device handling and assembly operations.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Grounding</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Adjustable</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Durable</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('electronic-strap')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electronic Suit -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical-consumables">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/suit.png" alt="Electronic Protection Suit" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-success/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Consumables</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Electronic Protection Suit</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Full-body cleanroom suit with integrated ESD protection for critical electronics manufacturing and cleanroom environments.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Cleanroom</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">ESD Protected</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Breathable</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('electronic-suit')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mechanical Fab Projects -->
+      <!-- L-Shape Table -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/l_shape_table.png" alt="L-Shape Metal Table" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Fab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">L-Shape Metal Work Table</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Custom fabricated L-shaped stainless steel work table designed for maximum workspace efficiency and durability in industrial environments.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Stainless Steel</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Custom Design</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Industrial Grade</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('l-shape-table')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metal Cabinets -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_cabinets.png" alt="Stainless Steel Storage Cabinet" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Fab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Medical Grade Storage Cabinet</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Precision-crafted stainless steel storage cabinet with frosted glass doors, drawers, and work surface for medical and laboratory applications.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Medical Grade</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Glass Doors</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Multi-Storage</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('metal-cabinets')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metal Shelf -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_shelf.png" alt="Industrial Metal Shelving Unit" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Fab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Reinforced Metal Shelving Unit</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Heavy-duty metal shelving with adjustable height configuration, reinforced with corrugated design for maximum load capacity and durability.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Heavy Duty</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Adjustable</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Reinforced</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('metal-shelf')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metal Shelves -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_shelves.png" alt="Industrial Storage System" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Fab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Industrial Storage System</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Large-scale metal shelving system designed for warehouse and commercial storage with multiple bays and high-volume capacity.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Warehouse Grade</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Multi-Bay</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">High Capacity</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('metal-shelves')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metal Shelves with Glass Pane -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_shelves_with_glass_pane.png" alt="Display Case with Glass Panels" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Fab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Illuminated Display Case</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Professional display case with glass panels, integrated LED lighting, and wood-grain backing for showcasing products and collectibles.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">LED Lighting</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Glass Panels</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Display Ready</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('display-case')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sink with Water Filtration -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/sink_with_water_filtration.png" alt="Stainless Steel Utility Sink with Filtration" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Fab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Integrated Filtration Sink System</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Complete stainless steel utility sink with integrated multi-stage water purification system, ideal for laboratory and medical facilities.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Water Filtration</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Stainless Steel</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Multi-Stage</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('filtration-sink')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table with Wheels -->
+      <div class="project-item card-hover bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-lg transition-colors duration-300" data-category="mechanical">
+        <div class="relative h-64 overflow-hidden">
+          <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/table_wheels.png" alt="Stainless Steel Utility Cart" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+          <div class="absolute top-4 left-4">
+            <span class="bg-accent/90 text-white px-3 py-1 rounded-full text-sm font-medium">Mechanical Fab</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white">Mobile Utility Cart</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">Versatile stainless steel mobile cart with dual-level storage and locking casters for flexible workspace organization and transport.</p>
+          <div class="flex justify-between items-center">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Mobile</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Locking Wheels</span>
+              <span class="bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-300 px-2 py-1 rounded text-xs">Dual-Level</span>
+            </div>
+            <button class="text-primary hover:text-primary/80 font-semibold" onclick="openModal('utility-cart')">
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Technical Capabilities -->
+<section id="capabilities" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl font-bold mb-4 text-gray-900 dark:text-white">Technical <span class="text-primary">Capabilities</span></h2>
+      <p class="text-xl text-accent dark:text-gray-300 max-w-3xl mx-auto">Our comprehensive suite of advanced manufacturing and engineering capabilities</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
+      <div>
+        <h3 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Manufacturing Excellence</h3>
+
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4">
+            <div class="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">PCB Manufacturing</h4>
+              <ul class="text-accent dark:text-gray-300 space-y-1">
+                <li>• Up to 32-layer PCBs with 0.1mm minimum trace width</li>
+                <li>• HDI (High Density Interconnect) technology</li>
+                <li>• Rigid, flex, and rigid-flex PCB capabilities</li>
+                <li>• Advanced materials: Rogers, Polyimide, FR4</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="w-12 h-12 bg-success/10 dark:bg-success/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Precision Machining</h4>
+              <ul class="text-accent dark:text-gray-300 space-y-1">
+                <li>• CNC machining with ±0.001" tolerance</li>
+                <li>• Multi-axis turning and milling centers</li>
+                <li>• Advanced tooling and fixturing systems</li>
+                <li>• Materials: Aluminum, Steel, Plastics, Composites</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4">
+            <div class="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Quality Control</h4>
+              <ul class="text-accent dark:text-gray-300 space-y-1">
+                <li>• Automated Optical Inspection (AOI)</li>
+                <li>• X-ray inspection for hidden solder joints</li>
+                <li>• In-circuit and functional testing</li>
+                <li>• Statistical Process Control (SPC)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-primary/10 to-primary/5 dark:from-primary/20 dark:to-primary/10 p-6 rounded-3xl border border-primary/20 text-center floating transition-colors duration-300">
+            <h4 class="text-4xl font-bold text-primary mb-2">0.1mm</h4>
+            <p class="text-accent dark:text-gray-300 text-sm">Min Trace Width</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-success/10 to-success/5 dark:from-success/20 dark:to-success/10 p-6 rounded-3xl border border-success/20 text-center floating transition-colors duration-300" style="animation-delay: 0.3s;">
+            <h4 class="text-4xl font-bold text-success mb-2">32</h4>
+            <p class="text-accent dark:text-gray-300 text-sm">Max PCB Layers</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-primary/10 to-success/5 dark:from-primary/20 dark:to-success/10 p-6 rounded-3xl border border-primary/20 text-center floating transition-colors duration-300" style="animation-delay: 0.6s;">
+            <h4 class="text-4xl font-bold text-primary mb-2">±0.001"</h4>
+            <p class="text-accent dark:text-gray-300 text-sm">Machining Tolerance</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-success/10 to-primary/5 dark:from-success/20 dark:to-primary/10 p-6 rounded-3xl border border-success/20 text-center floating transition-colors duration-300" style="animation-delay: 0.9s;">
+            <h4 class="text-4xl font-bold text-success mb-2">99.9%</h4>
+            <p class="text-accent dark:text-gray-300 text-sm">First Pass Yield</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipment & Technology -->
+    <div class="bg-secondary/10 dark:bg-gray-800/10 p-8 rounded-3xl transition-colors duration-300">
+      <h3 class="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-white">Advanced Equipment & Technology</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transition-colors duration-300">
+          <h4 class="font-bold text-gray-800 dark:text-white mb-3">SMT Production Lines</h4>
+          <ul class="text-sm text-accent dark:text-gray-300 space-y-1">
+            <li>• High-speed pick and place machines</li>
+            <li>• Reflow ovens with nitrogen atmosphere</li>
+            <li>• Wave soldering for through-hole components</li>
+            <li>• Selective soldering systems</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transition-colors duration-300">
+          <h4 class="font-bold text-gray-800 dark:text-white mb-3">Inspection Equipment</h4>
+          <ul class="text-sm text-accent dark:text-gray-300 space-y-1">
+            <li>• 3D AOI systems</li>
+            <li>• X-ray inspection machines</li>
+            <li>• Boundary scan testing</li>
+            <li>• Flying probe testers</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transition-colors duration-300">
+          <h4 class="font-bold text-gray-800 dark:text-white mb-3">Design Software</h4>
+          <ul class="text-sm text-accent dark:text-gray-300 space-y-1">
+            <li>• Altium Designer</li>
+            <li>• KiCad EDA Suite</li>
+            <li>• Cadence Allegro</li>
+            <li>• SIwave for signal integrity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Templates -->
+<!-- Medical PCB Modal -->
+<div id="medical-pcb" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Medical Device PCB</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('medical-pcb')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="NETWORKS COMPANY PROFILE/pcb/pcb_design.png" alt="Medical Device PCB" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Project Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>PCB Layers:</strong> 8-layer stackup</li>
+          <li><strong>Board Size:</strong> 80mm x 120mm</li>
+          <li><strong>Trace Width:</strong> 0.1mm minimum</li>
+          <li><strong>Via Size:</strong> 0.15mm microvias</li>
+          <li><strong>Material:</strong> FR4 with Rogers cores</li>
+          <li><strong>Finish:</strong> ENIG (Electroless Nickel Immersion Gold)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Project Overview</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          This high-density PCB was designed for a critical medical monitoring device requiring exceptional signal integrity and reliability. The 8-layer design incorporates dedicated power and ground planes with careful attention to EMI/EMC compliance.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Key Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Medical device grade materials and processes</li>
+          <li>• Signal integrity analysis and optimization</li>
+          <li>• Impedance controlled differential pairs</li>
+          <li>• Low noise analog sections with guard traces</li>
+          <li>• IPC Class 3 manufacturing standards</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Challenges Solved</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• High-speed digital and sensitive analog coexistence</li>
+          <li>• Strict FDA compliance requirements</li>
+          <li>• Miniaturization while maintaining performance</li>
+          <li>• Thermal management for power components</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- IoT PCB Modal -->
+<div id="iot-pcb" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">IoT Sensor Network PCB</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('iot-pcb')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="NETWORKS COMPANY PROFILE/pcb/high_density_pcb.png" alt="IoT Sensor PCB" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Technical Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>PCB Type:</strong> 4-layer with RF optimization</li>
+          <li><strong>Dimensions:</strong> 25mm x 35mm</li>
+          <li><strong>Frequency:</strong> 2.4GHz ISM band</li>
+          <li><strong>Power:</strong> Ultra-low power design</li>
+          <li><strong>Antenna:</strong> Integrated PCB antenna</li>
+          <li><strong>Components:</strong> 0201 and 01005 packages</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Project Details</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Compact wireless sensor PCB designed for IoT applications with emphasis on power efficiency and RF performance. Features integrated antenna design and optimized layout for maximum range and battery life.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Achievements</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• 50% size reduction from previous generation</li>
+          <li>• 3+ year battery life on single coin cell</li>
+          <li>• 200+ meter range in open field</li>
+          <li>• FCC and CE certification obtained</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ESD Matt Modal -->
+<div id="esd-matt" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Anti-Static Green Matt</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('esd-matt')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/esd_green_matt.png" alt="Anti-Static Green Matt" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> Conductive rubber compound</li>
+          <li><strong>Surface Resistance:</strong> 10⁶ - 10⁹ ohms</li>
+          <li><strong>Thickness:</strong> 2mm standard</li>
+          <li><strong>Size:</strong> Custom dimensions available</li>
+          <li><strong>Color:</strong> ESD-safe green</li>
+          <li><strong>Certification:</strong> IEC 61340-5-1 compliant</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Overview</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Professional-grade anti-static work surface protection designed for sensitive electronic component handling and PCB assembly operations. Provides reliable ESD protection while maintaining durability for industrial use.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Key Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Static dissipative surface protection</li>
+          <li>• Chemical resistant and easy to clean</li>
+          <li>• Non-slip bottom surface</li>
+          <li>• Heat resistant up to 120°C</li>
+          <li>• Available in custom sizes</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Electronics assembly workstations</li>
+          <li>• PCB fabrication areas</li>
+          <li>• Component testing stations</li>
+          <li>• Cleanroom environments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Finger Cots Modal -->
+<div id="finger-cots" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Finger Protection Cots</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('finger-cots')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/fingers.png" alt="Finger Protection Cots" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> Anti-static latex-free compound</li>
+          <li><strong>Surface Resistance:</strong> 10⁸ - 10¹¹ ohms</li>
+          <li><strong>Thickness:</strong> 0.12mm ±0.02mm</li>
+          <li><strong>Length:</strong> 65mm</li>
+          <li><strong>Sizes:</strong> Small, Medium, Large, X-Large</li>
+          <li><strong>Package:</strong> 144 pieces per box</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Details</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Anti-static finger cots designed for precise handling of electronic components while maintaining maximum dexterity and ESD protection. Ideal for detailed assembly work and component inspection.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Benefits</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Superior tactile sensitivity</li>
+          <li>• Latex-free for allergy safety</li>
+          <li>• Ambidextrous design</li>
+          <li>• Rolled cuff for easy donning</li>
+          <li>• Powder-free interior</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Ideal Uses</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• SMT component placement</li>
+          <li>• Quality inspection processes</li>
+          <li>• Precision assembly operations</li>
+          <li>• Electronic device testing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Blue Gloves Modal -->
+<div id="blue-gloves" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Blue Electronics Gloves</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('blue-gloves')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/gloves_blue.png" alt="Blue Electronics Gloves" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> Nitrile with anti-static additives</li>
+          <li><strong>Surface Resistance:</strong> 10⁸ - 10¹¹ ohms</li>
+          <li><strong>Thickness:</strong> 0.08mm palm, 0.06mm fingertips</li>
+          <li><strong>Length:</strong> 240mm</li>
+          <li><strong>Sizes:</strong> XS, S, M, L, XL</li>
+          <li><strong>Package:</strong> 100 pieces per box</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Features</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Professional-grade disposable gloves specifically engineered for electronics handling with excellent tactile sensitivity and reliable ESD protection. Features advanced nitrile formulation for superior performance.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Advanced Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Enhanced grip texture</li>
+          <li>• Chemical resistance</li>
+          <li>• Powder-free formulation</li>
+          <li>• Accelerator-free to reduce allergies</li>
+          <li>• Beaded cuff for easy removal</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Electronic assembly operations</li>
+          <li>• PCB handling and testing</li>
+          <li>• Component inspection</li>
+          <li>• Laboratory work</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- White Gloves Modal -->
+<div id="white-gloves" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">White Electronics Gloves</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('white-gloves')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/gloves_white.png" alt="White Electronics Gloves" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> Ultra-clean nitrile compound</li>
+          <li><strong>Surface Resistance:</strong> 10⁷ - 10¹⁰ ohms</li>
+          <li><strong>Particle Count:</strong> <1000 particles ≥0.5μm per glove</li>
+          <li><strong>Thickness:</strong> 0.05mm fingertips</li>
+          <li><strong>Cleanroom Class:</strong> ISO Class 4 certified</li>
+          <li><strong>Package:</strong> 100 pieces per sealed bag</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Cleanroom Grade Protection</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Ultra-clean white gloves designed for high-precision electronics work requiring maximum cleanliness and static protection. Manufactured in controlled environments for critical applications.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Cleanroom Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Ultra-low particle generation</li>
+          <li>• Double-bagged packaging</li>
+          <li>• Gamma sterilization available</li>
+          <li>• Low extractable levels</li>
+          <li>• Endotoxin tested</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Critical Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Semiconductor manufacturing</li>
+          <li>• Medical device assembly</li>
+          <li>• Optical component handling</li>
+          <li>• Precision electronics fabrication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Kimwipes Modal -->
+<div id="kimwipes" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Kimwipes Cleaning Wipes</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('kimwipes')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/kimwipes.png" alt="Kimwipes Cleaning Wipes" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> 100% virgin wood pulp</li>
+          <li><strong>Particle Count:</strong> Ultra-low lint generation</li>
+          <li><strong>Absorbency:</strong> 18g water per gram of tissue</li>
+          <li><strong>Size:</strong> 4.4" x 8.4" (11.2cm x 21.3cm)</li>
+          <li><strong>Package:</strong> 280 sheets per box</li>
+          <li><strong>Wet Strength:</strong> 40g minimum</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Premium Cleaning Solution</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Premium lint-free wipes designed for cleaning sensitive electronic surfaces, optical components, and precision instruments without risk of contamination or surface damage.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Performance Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Lint-free and low-particle generation</li>
+          <li>• High absorbency for efficient cleaning</li>
+          <li>• Chemical compatibility with most solvents</li>
+          <li>• Anti-static properties</li>
+          <li>• Single-sheet dispensing</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Cleaning Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• PCB surface preparation</li>
+          <li>• Optical lens cleaning</li>
+          <li>• Precision instrument maintenance</li>
+          <li>• Laboratory equipment cleaning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Electronic Strap Modal -->
+<div id="electronic-strap" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Electronic Wrist Strap</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('electronic-strap')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/strap.png" alt="Electronic Wrist Strap" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Resistance:</strong> 1 megohm ±5%</li>
+          <li><strong>Strap Material:</strong> Conductive fabric</li>
+          <li><strong>Buckle:</strong> Stainless steel adjustment</li>
+          <li><strong>Cord Length:</strong> 6 feet (1.8m) coiled</li>
+          <li><strong>Connector:</strong> 4mm banana plug</li>
+          <li><strong>Compliance:</strong> ANSI/ESD S1.1-2013</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Professional Grounding System</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Professional anti-static wrist strap system designed for reliable personnel grounding during electronic device handling and assembly operations. Ensures continuous ESD protection.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Safety Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Built-in 1 megohm safety resistor</li>
+          <li>• Adjustable fabric band for comfort</li>
+          <li>• Durable coiled cord design</li>
+          <li>• Reliable electrical connection</li>
+          <li>• Easy-to-use banana plug connector</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Electronic assembly workstations</li>
+          <li>• PCB handling and rework</li>
+          <li>• Component testing areas</li>
+          <li>• Cleanroom environments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Electronic Suit Modal -->
+<div id="electronic-suit" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Electronic Protection Suit</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('electronic-suit')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_consumables/suit.png" alt="Electronic Protection Suit" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> Conductive polyester fabric</li>
+          <li><strong>Surface Resistance:</strong> 10⁵ - 10⁶ ohms</li>
+          <li><strong>Particle Shedding:</strong> <1000 particles ≥0.5μm</li>
+          <li><strong>Sizes:</strong> S, M, L, XL, XXL</li>
+          <li><strong>Closure:</strong> ESD-safe zippers and snaps</li>
+          <li><strong>Certification:</strong> ISO 14644-1 Class 5</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Full-Body ESD Protection</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Comprehensive cleanroom suit with integrated ESD protection designed for critical electronics manufacturing environments. Provides complete coverage while maintaining comfort and mobility.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Advanced Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Integrated hood with face seal</li>
+          <li>• Breathable fabric construction</li>
+          <li>• Reinforced knees and elbows</li>
+          <li>• ESD-safe closures throughout</li>
+          <li>• Anti-static inner lining</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Critical Environments</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Semiconductor fabrication</li>
+          <li>• PCB manufacturing facilities</li>
+          <li>• Medical device assembly</li>
+          <li>• Aerospace electronics production</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mechanical Fab Modals -->
+<!-- L-Shape Table Modal -->
+<div id="l-shape-table" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">L-Shape Metal Work Table</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('l-shape-table')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/l_shape_table.png" alt="L-Shape Metal Table" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> 304 Stainless Steel</li>
+          <li><strong>Dimensions:</strong> 1500mm x 1200mm x 850mm</li>
+          <li><strong>Top Thickness:</strong> 1.5mm with reinforcement</li>
+          <li><strong>Load Capacity:</strong> 200kg distributed</li>
+          <li><strong>Finish:</strong> Brushed stainless steel</li>
+          <li><strong>Legs:</strong> Adjustable height levelers</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Custom Engineering Solution</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Custom-fabricated L-shaped stainless steel work table designed to maximize workspace efficiency while providing exceptional durability for demanding industrial environments. Features precision welding and finishing.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Design Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Space-efficient L-shaped design</li>
+          <li>• Seamless welded construction</li>
+          <li>• Chemical and corrosion resistant</li>
+          <li>• Easy to clean surface</li>
+          <li>• Custom dimensions available</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Electronics assembly stations</li>
+          <li>• Laboratory work areas</li>
+          <li>• Medical device manufacturing</li>
+          <li>• Quality control stations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Metal Cabinets Modal -->
+<div id="metal-cabinets" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Medical Grade Storage Cabinet</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('metal-cabinets')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_cabinets.png" alt="Stainless Steel Storage Cabinet" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> 316L Stainless Steel</li>
+          <li><strong>Dimensions:</strong> 1200mm x 600mm x 2000mm</li>
+          <li><strong>Glass Doors:</strong> Tempered safety glass</li>
+          <li><strong>Drawers:</strong> Full-extension slides</li>
+          <li><strong>Shelves:</strong> Adjustable positioning</li>
+          <li><strong>Locks:</strong> Medical-grade security</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Multi-Function Storage System</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Precision-crafted stainless steel storage cabinet designed for medical and laboratory applications. Features upper glass-door storage, integrated work surface, and lower drawer/cabinet combination for versatile storage solutions.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Storage Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Upper glass-door cabinet for visibility</li>
+          <li>• Integrated work counter surface</li>
+          <li>• Two-drawer section for small items</li>
+          <li>• Lower cabinet with solid door</li>
+          <li>• Adjustable shelving system</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Ideal Environments</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Medical facilities and hospitals</li>
+          <li>• Laboratory storage areas</li>
+          <li>• Pharmaceutical manufacturing</li>
+          <li>• Research and development labs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Metal Shelf Modal -->
+<div id="metal-shelf" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Reinforced Metal Shelving Unit</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('metal-shelf')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_shelf.png" alt="Industrial Metal Shelving Unit" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> Powder-coated steel</li>
+          <li><strong>Dimensions:</strong> 900mm x 400mm x 1800mm</li>
+          <li><strong>Shelf Load:</strong> 150kg per shelf</li>
+          <li><strong>Adjustment:</strong> 50mm increments</li>
+          <li><strong>Finish:</strong> Beige powder coating</li>
+          <li><strong>Assembly:</strong> Bolt-free construction</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Heavy-Duty Storage Solution</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Heavy-duty metal shelving with adjustable height configuration and reinforced corrugated design underneath each shelf for maximum load capacity and structural stability. Perfect for industrial storage needs.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Structural Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Reinforced corrugated shelf design</li>
+          <li>• Adjustable height positioning</li>
+          <li>• Vertical posts with positioning holes</li>
+          <li>• No-bolt assembly system</li>
+          <li>• Corrosion-resistant coating</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Warehouse storage systems</li>
+          <li>• Industrial equipment storage</li>
+          <li>• Archive and document storage</li>
+          <li>• Manufacturing supply areas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Metal Shelves Modal -->
+<div id="metal-shelves" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Industrial Storage System</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('metal-shelves')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_shelves.png" alt="Industrial Storage System" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">System Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Configuration:</strong> Multi-bay modular system</li>
+          <li><strong>Bay Width:</strong> 1000mm standard</li>
+          <li><strong>Height:</strong> Up to 3000mm</li>
+          <li><strong>Load Capacity:</strong> 500kg per bay</li>
+          <li><strong>Material:</strong> Heavy-gauge steel</li>
+          <li><strong>Finish:</strong> Industrial gray coating</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Large-Scale Storage Solution</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Large-scale metal shelving system engineered for warehouse and commercial storage applications. Features multiple bays with high-volume capacity and professional installation for permanent or semi-permanent storage solutions.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">System Advantages</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Modular expandable design</li>
+          <li>• Professional installation service</li>
+          <li>• High-capacity storage solution</li>
+          <li>• Earthquake-resistant anchoring</li>
+          <li>• Custom configuration available</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Commercial Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Warehouse operations</li>
+          <li>• Distribution centers</li>
+          <li>• Manufacturing facilities</li>
+          <li>• Retail back-stock areas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Display Case Modal -->
+<div id="display-case" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Illuminated Display Case</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('display-case')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/metal_shelves_with_glass_pane.png" alt="Display Case with Glass Panels" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Frame:</strong> Aluminum with white finish</li>
+          <li><strong>Panels:</strong> Tempered glass front and sides</li>
+          <li><strong>Lighting:</strong> LED strips with dimmer control</li>
+          <li><strong>Backing:</strong> Wood-grain laminate</li>
+          <li><strong>Shelves:</strong> Adjustable glass shelving</li>
+          <li><strong>Access:</strong> Hinged front panel</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Professional Display Solution</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Professional display case with comprehensive glass panel coverage, integrated LED lighting system, and elegant wood-grain backing. Designed for showcasing products, collectibles, and valuable items with maximum visibility and security.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Display Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• 360-degree visibility design</li>
+          <li>• Integrated LED lighting system</li>
+          <li>• Adjustable glass shelving</li>
+          <li>• Lockable access panel</li>
+          <li>• Anti-glare glass coating</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Ideal Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Retail merchandise display</li>
+          <li>• Museum and gallery exhibitions</li>
+          <li>• Collectibles and memorabilia</li>
+          <li>• Awards and trophy display</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Filtration Sink Modal -->
+<div id="filtration-sink" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Integrated Filtration Sink System</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('filtration-sink')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/sink_with_water_filtration.png" alt="Stainless Steel Utility Sink with Filtration" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">System Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> 316L Stainless Steel</li>
+          <li><strong>Sink Dimensions:</strong> 600mm x 450mm x 300mm</li>
+          <li><strong>Filtration:</strong> Multi-stage RO system</li>
+          <li><strong>Flow Rate:</strong> 15 liters per minute</li>
+          <li><strong>Filter Life:</strong> 6-12 months depending on usage</li>
+          <li><strong>Cabinet:</strong> Two-door storage below</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Complete Water Purification Solution</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Complete stainless steel utility sink with integrated multi-stage water purification system. Features prominent blue filter housing and comprehensive filtration components ideal for laboratory and medical facility applications.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Filtration Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Multi-stage reverse osmosis system</li>
+          <li>• Sediment and carbon pre-filters</li>
+          <li>• UV sterilization option</li>
+          <li>• Digital flow and quality monitoring</li>
+          <li>• Easy filter replacement design</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Laboratory water preparation</li>
+          <li>• Medical facility operations</li>
+          <li>• Pharmaceutical manufacturing</li>
+          <li>• Research and development</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Utility Cart Modal -->
+<div id="utility-cart" class="modal">
+  <div class="modal-content">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Mobile Utility Cart</h2>
+      <button class="text-gray-500 hover:text-gray-700 text-2xl" onclick="closeModal('utility-cart')">&times;</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <img src="../NETWORKS COMPANY PROFILE/mechanical_fab/table_wheels.png" alt="Stainless Steel Utility Cart" class="w-full h-64 object-cover rounded-xl mb-4">
+
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Product Specifications</h3>
+        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+          <li><strong>Material:</strong> 304 Stainless Steel</li>
+          <li><strong>Dimensions:</strong> 800mm x 500mm x 850mm</li>
+          <li><strong>Top Surface:</strong> Flat with raised edges</li>
+          <li><strong>Lower Shelf:</strong> Full-width storage</li>
+          <li><strong>Wheels:</strong> 4 swivel casters (2 locking)</li>
+          <li><strong>Load Capacity:</strong> 75kg per level</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">Versatile Mobile Storage</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Versatile stainless steel mobile cart featuring dual-level storage configuration with premium swivel casters including locking mechanisms. Designed for flexible workspace organization and efficient material transport.
+        </p>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Mobility Features</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300 mb-4">
+          <li>• Four premium swivel casters</li>
+          <li>• Two locking wheels for stability</li>
+          <li>• Smooth-rolling operation</li>
+          <li>• 360-degree maneuverability</li>
+          <li>• Quiet operation design</li>
+        </ul>
+
+        <h4 class="text-lg font-bold mb-2 text-gray-800 dark:text-white">Workspace Applications</h4>
+        <ul class="space-y-1 text-gray-600 dark:text-gray-300">
+          <li>• Medical equipment transport</li>
+          <li>• Laboratory sample handling</li>
+          <li>• Manufacturing material movement</li>
+          <li>• Food service operations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Section -->
+<section class="py-20 gradient-bg relative overflow-hidden">
+  <div class="container mx-auto px-6 text-center relative z-10">
+    <h2 class="text-5xl font-bold mb-6 text-white">Ready to Start Your Next Project?</h2>
+    <p class="text-xl mb-8 max-w-2xl mx-auto text-white/90">
+      Let's discuss how our expertise can bring your innovative ideas to life with precision and quality.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <button class="bg-white text-gray-900 hover:bg-secondary px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+        Request Quote
+      </button>
+      <button class="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300">
+        Schedule Consultation
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary/30 dark:bg-gray-800/30 py-16 border-t border-secondary dark:border-gray-700 transition-colors duration-300">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center space-x-2 mb-6">
+          <img src="NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-16 h-16" />
+          <span class="text-xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Netsworks</span>
+        </div>
+        <p class="text-accent dark:text-gray-300 mb-4">Precision electronics fabrication for the future.</p>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Services</h4>
+        <ul class="space-y-2 text-accent dark:text-gray-300">
+          <li><a href="#" class="hover:text-primary transition-colors">PCB Design</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Assembly</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Testing</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Production</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Company</h4>
+        <ul class="space-y-2 text-accent dark:text-gray-300">
+          <li><a href="#" class="hover:text-primary transition-colors">About</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">News</a></li>
+          <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Contact</h4>
+        <div class="space-y-2 text-accent dark:text-gray-300">
+          <p>Punta Altezza Subd<br>Calamba City, Laguna</p>
+          <p>sales@netsworksgroup.com</p>
+          <p>+63 917-188-3577</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-secondary dark:border-gray-700 mt-12 pt-8 text-center text-accent dark:text-gray-300 transition-colors duration-300">
+      <p>&copy; 2025 Netsworks. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Dark mode functionality
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const html = document.documentElement;
+
+  // Check for saved theme preference
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  if (currentTheme === 'dark') {
+    html.classList.add('dark');
+  }
+
+  darkModeToggle.addEventListener('click', () => {
+    html.classList.toggle('dark');
+    const theme = html.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+
+  // Filter functionality
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.project-item');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Filter projects
+      projectItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+
+        if (filter === 'all' || category === filter) {
+          item.classList.remove('hidden');
+          setTimeout(() => {
+            item.style.display = 'block';
+          }, 10);
+        } else {
+          item.classList.add('hidden');
+          setTimeout(() => {
+            if (item.classList.contains('hidden')) {
+              item.style.display = 'none';
+            }
+          }, 500);
+        }
+      });
+    });
+  });
+
+  // Modal functionality
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('show');
+      document.body.style.overflow = 'auto';
+    }
+  }
+
+  // Close modal when clicking outside
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+      e.target.classList.remove('show');
+      document.body.style.overflow = 'auto';
+    }
+  });
+
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Header scroll effect
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 100) {
+      header.classList.add('bg-white/95', 'dark:bg-gray-900/95');
+    } else {
+      header.classList.remove('bg-white/95', 'dark:bg-gray-900/95');
+    }
+  });
+</script>
+
+</body>
+</html>

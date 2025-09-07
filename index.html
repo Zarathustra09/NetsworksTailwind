@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netsworks - Advanced Electronics Fabrication</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="tailwind.css">
+
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -21,161 +23,6 @@
       }
     }
   </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-
-    body { font-family: 'Inter', sans-serif; }
-
-    .gradient-bg {
-      background: linear-gradient(135deg, #BD0569 0%, #185B18 100%);
-    }
-
-    .card-hover {
-      transition: all 0.3s ease;
-    }
-
-    .card-hover:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(189, 5, 105, 0.15);
-    }
-
-    .dark .card-hover:hover {
-      box-shadow: 0 20px 40px rgba(189, 5, 105, 0.2);
-    }
-
-    .pulse-glow {
-      animation: pulse-glow 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes pulse-glow {
-      from { box-shadow: 0 0 20px rgba(189, 5, 105, 0.4); }
-      to { box-shadow: 0 0 40px rgba(189, 5, 105, 0.8); }
-    }
-
-    .floating {
-      animation: floating 6s ease-in-out infinite;
-    }
-
-    @keyframes floating {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-    }
-
-    .tech-grid {
-      background-image:
-              linear-gradient(rgba(189, 5, 105, 0.1) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(189, 5, 105, 0.1) 1px, transparent 1px);
-      background-size: 20px 20px;
-    }
-
-    .fade-in {
-      opacity: 0;
-      animation: fadeIn 1s ease-in forwards;
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-
-    .illustration {
-      background: linear-gradient(145deg, #E6E9EF 0%, #f8fafc 100%);
-      border-radius: 50px;
-      position: relative;
-    }
-
-    .dark .illustration {
-      background: linear-gradient(145deg, #374151 0%, #1f2937 100%);
-    }
-
-    .floating-element {
-      animation: float 4s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-15px) rotate(5deg); }
-    }
-
-    .bounce-element {
-      animation: bounce 3s ease-in-out infinite;
-    }
-
-    @keyframes bounce {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-    }
-
-    /* Dark mode toggle button styles */
-    .dark-mode-toggle {
-      position: relative;
-      width: 60px;
-      height: 30px;
-      border-radius: 15px;
-      background: #e5e7eb;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-
-    .dark .dark-mode-toggle {
-      background: #374151;
-    }
-
-    .dark-mode-toggle::before {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      background: white;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .dark .dark-mode-toggle::before {
-      transform: translateX(30px);
-      background: #f9fafb;
-    }
-
-    /* Icon transitions */
-    .sun-icon, .moon-icon {
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-
-    .dark .sun-icon {
-      opacity: 0;
-      transform: rotate(180deg);
-    }
-
-    .dark .moon-icon {
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-
-    .sun-icon {
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-
-    .moon-icon {
-      opacity: 0;
-      transform: rotate(-180deg);
-    }
-
-    /* Dark mode overrides for better contrast */
-    .dark .border-secondary {
-      border-color: #374151;
-    }
-
-    .dark .bg-secondary\/20 {
-      background-color: rgba(55, 65, 81, 0.2);
-    }
-
-    .dark .bg-secondary\/10 {
-      background-color: rgba(55, 65, 81, 0.1);
-    }
-  </style>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-x-hidden transition-colors duration-300">
 <!-- Header -->
@@ -995,7 +842,6 @@
           </a>
         </div>
       </div>
-
     </div>
 
     <!-- CTA Section -->
