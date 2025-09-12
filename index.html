@@ -30,13 +30,15 @@
   <nav class="container mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <img src="NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-20 h-20" />
-        <span class="text-2xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Netsworks</span>
+        <a href="index.html" class="flex items-center space-x-2">
+          <img src="../NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-16 h-16" />
+          <span class="text-xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Netsworks</span>
+        </a>
       </div>
       <div class="hidden md:flex items-center space-x-8">
-        <a href="#services" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Services</a>
+       <a href="portfolio/portfolio_page.html" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Services</a>
         <a href="#capabilities" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Capabilities</a>
-        <a href="#about" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">About</a>
+        <a href="about/about_page.html" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">About</a>
 
         <!-- Dark Mode Toggle -->
         <div class="flex items-center space-x-3">
@@ -54,9 +56,12 @@
           </div>
         </div>
 
-        <button class="bg-gradient-to-r from-primary to-success hover:from-primary/90 hover:to-success/90 text-white px-6 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105">
-          Get Quote
+        <button
+                onclick="window.location.href='about/about_page.html#contact'"
+                class="bg-gradient-to-r from-primary to-success hover:from-primary/90 hover:to-success/90 text-white px-6 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105">
+          Contact Us
         </button>
+
       </div>
     </div>
   </nav>
@@ -619,7 +624,8 @@
 
     <div class="text-center">
       <p class="text-lg text-accent dark:text-gray-300 mb-8">Ready to become our next success story?</p>
-      <button class="bg-gradient-to-r from-primary to-success hover:from-primary/90 hover:to-success/90 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+      <button class="bg-gradient-to-r from-primary to-success hover:from-primary/90 hover:to-success/90 text-white px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 transform hover:scale-105"
+              onclick="window.location.href='about/about_page.html#contact'">
         Start Partnership
       </button>
     </div>
@@ -635,21 +641,26 @@
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="card-hover bg-secondary/10 dark:bg-gray-800/50 p-8 rounded-3xl border border-secondary/50 dark:border-gray-700 transition-colors duration-300">
-        <div class="mb-6">
-          <svg class="w-8 h-8 text-primary mb-4" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-          </svg>
-          <p class="text-accent dark:text-gray-300 leading-relaxed">"Professional service from start to finish. NETSWORKS' clean room solutions and mechanical fabrication quality is outstanding. They truly understand our industry needs."</p>
-        </div>
-        <div class="flex items-center">
-          <img src="https://placehold.co/60x60/685F63/FFFFFF?text=JD" alt="Client Avatar" class="w-12 h-12 rounded-full mr-4">
-          <div>
-            <h4 class="font-semibold text-gray-800 dark:text-white">Joy Donator</h4>
-            <p class="text-sm text-accent dark:text-gray-400">Comptroller, Smart Probe Inc.</p>
-          </div>
-        </div>
-      </div>
+      <!-- Testimonial Card -->
+     <div class="flex flex-col bg-secondary/10 dark:bg-gray-800/50 p-8 rounded-3xl border border-secondary/50 dark:border-gray-700 shadow-lg transition-colors duration-300">
+       <div class="flex items-center mb-6">
+         <img src="NETWORKS COMPANY PROFILE/tesimonials/Joy.png" alt="Joy Donator" class="w-28 h-28 rounded-2xl object-cover mr-6 border-4 border-primary/20">
+         <div>
+           <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Joy Donator</h4>
+           <p class="text-primary font-semibold mb-1">Comptroller</p>
+           <p class="text-accent dark:text-gray-300 text-sm">Smart Probe Inc.</p>
+         </div>
+       </div>
+       <div class="flex-1 flex items-start">
+         <svg class="w-8 h-8 text-primary mr-3 mt-1" fill="currentColor" viewBox="0 0 24 24">
+           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+         </svg>
+         <p class="text-accent dark:text-gray-300 leading-relaxed">
+           "Professional service from start to finish. NETSWORKS' clean room solutions and mechanical fabrication quality is outstanding. They truly understand our industry needs."
+         </p>
+       </div>
+     </div>
+      <!-- Add more testimonial cards as needed -->
     </div>
   </div>
 </section>
@@ -764,25 +775,24 @@
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-
-      <!-- Portfolio Item 1 -->
+      <!-- L-Shape Metal Table -->
       <div class="group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-secondary/20 dark:border-gray-700">
         <div class="relative h-64 overflow-hidden">
-          <img src="NETWORKS COMPANY PROFILE/mechanical_consumables/blade.png"
-               alt="Precision mechanical consumables for industrial applications"
+          <img src="NETWORKS COMPANY PROFILE/mechanical_fab/l_shape_table.png"
+               alt="L-Shape Metal Table"
                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
         <div class="p-7">
           <div class="flex items-center mb-3">
-            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium mr-3">Mechanical</span>
+            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium mr-3">Mechanical Fab</span>
             <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full text-sm">2023</span>
           </div>
-          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">Precision Mechanical Consumables</h3>
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">L-Shape Metal Work Table</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-5 leading-relaxed">
-            High-precision components engineered for demanding industrial applications, featuring tight tolerances and superior wear resistance.
+            Custom fabricated L-shaped stainless steel work table designed for maximum workspace efficiency and durability in industrial environments.
           </p>
-          <a href="#" class="inline-flex items-center text-primary font-medium group-hover:underline">
+          <a href="portfolio/portfolio_page.html" class="inline-flex items-center text-primary font-medium group-hover:underline">
             View Project Details
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-6M10 6l4-4m0 0l4 4m-4-4v14" />
@@ -791,24 +801,24 @@
         </div>
       </div>
 
-      <!-- Portfolio Item 2 -->
+      <!-- Medical Grade Storage Cabinet -->
       <div class="group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-secondary/20 dark:border-gray-700">
         <div class="relative h-64 overflow-hidden">
-          <img src="NETWORKS COMPANY PROFILE/pcb/pcb_design.png"
-               alt="High-density multi-layer PCB design for medical devices"
+          <img src="NETWORKS COMPANY PROFILE/mechanical_fab/metal_cabinets.png"
+               alt="Stainless Steel Storage Cabinet"
                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
         <div class="p-7">
           <div class="flex items-center mb-3">
-            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium mr-3">PCB Design</span>
+            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium mr-3">Mechanical Fab</span>
             <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full text-sm">2023</span>
           </div>
-          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">Advanced Medical Device PCBs</h3>
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">Medical Grade Storage Cabinet</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-5 leading-relaxed">
-            Multi-layer PCBs with signal integrity optimization for critical medical applications, featuring 0.1mm trace precision and thermal management.
+            Precision-crafted stainless steel storage cabinet with frosted glass doors, drawers, and work surface for medical and laboratory applications.
           </p>
-          <a href="#" class="inline-flex items-center text-primary font-medium group-hover:underline">
+          <a href="portfolio/portfolio_page.html" class="inline-flex items-center text-primary font-medium group-hover:underline">
             View Project Details
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-6M10 6l4-4m0 0l4 4m-4-4v14" />
@@ -817,24 +827,24 @@
         </div>
       </div>
 
-      <!-- Portfolio Item 3 -->
+      <!-- Reinforced Metal Shelving Unit -->
       <div class="group relative bg-white dark:bg-gray-800 rounded-3xl overflow-hidden shadow-xl transition-all duration-500 hover:shadow-2xl border border-secondary/20 dark:border-gray-700">
         <div class="relative h-64 overflow-hidden">
           <img src="NETWORKS COMPANY PROFILE/mechanical_fab/metal_shelf.png"
-               alt="Custom metal enclosure fabrication for industrial equipment"
+               alt="Industrial Metal Shelving Unit"
                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
         <div class="p-7">
           <div class="flex items-center mb-3">
-            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium mr-3">Fabrication</span>
-            <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full text-sm">2022</span>
+            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium mr-3">Mechanical Fab</span>
+            <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full text-sm">2023</span>
           </div>
-          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">Industrial Enclosure Systems</h3>
+          <h3 class="text-2xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300">Reinforced Metal Shelving Unit</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-5 leading-relaxed">
-            Custom-engineered metal enclosures with IP67 rating, featuring CNC-machined components and precision assembly for harsh environments.
+            Heavy-duty metal shelving with adjustable height configuration, reinforced with corrugated design for maximum load capacity and durability.
           </p>
-          <a href="#" class="inline-flex items-center text-primary font-medium group-hover:underline">
+          <a href="portfolio/portfolio_page.html" class="inline-flex items-center text-primary font-medium group-hover:underline">
             View Project Details
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-6M10 6l4-4m0 0l4 4m-4-4v14" />
@@ -846,8 +856,8 @@
 
     <!-- CTA Section -->
     <div class="mt-16 text-center">
-      <a href="#" class="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary font-bold rounded-full text-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl">
-        View All Projects
+      <a href="portfolio/portfolio_page.html" class="inline-flex items-center justify-center px-8 py-4 border-2 border-primary text-primary font-bold rounded-full text-lg hover:bg-primary hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl">
+        View Full Portfolio
         <svg xmlns="http://www.w3.org/2000/svg" class="ml-3 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
         </svg>

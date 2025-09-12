@@ -25,18 +25,20 @@
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 overflow-x-hidden transition-colors duration-300">
 
 <!-- Header -->
+<!-- Header -->
 <header class="fixed w-full top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-secondary dark:border-gray-700 transition-colors duration-300">
   <nav class="container mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
-        <img src="../NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-16 h-16" />
-        <span class="text-xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Netsworks</span>
+        <a href="../index.html" class="flex items-center space-x-2">
+          <img src="../NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-16 h-16" />
+          <span class="text-xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Netsworks</span>
+        </a>
       </div>
       <div class="hidden md:flex items-center space-x-8">
-        <a href="#" onclick="history.back()" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">← Back to Home</a>
-        <a href="#projects" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Projects</a>
+        <a href="#" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Services</a>
         <a href="#capabilities" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">Capabilities</a>
-
+        <a href="../about/about_page.html" class="text-accent dark:text-gray-300 hover:text-primary transition-colors">About</a>
         <!-- Dark Mode Toggle -->
         <div class="flex items-center space-x-3">
           <div class="relative">
@@ -52,13 +54,30 @@
             </div>
           </div>
         </div>
-
-        <button class="bg-gradient-to-r from-primary to-success hover:from-primary/90 hover:to-success/90 text-white px-6 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105">
+        <button
+                onclick="window.location.href='../about/about_page.html#contact'"
+                class="bg-gradient-to-r from-primary to-success hover:from-primary/90 hover:to-success/90 text-white px-6 py-2 rounded-2xl transition-all duration-300 transform hover:scale-105">
           Contact Us
         </button>
+
       </div>
     </div>
   </nav>
+  <!-- SVG Header Background -->
+  <div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none z-0">
+    <svg class="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="circuit" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="1" fill="#BD0569"/>
+          <circle cx="18" cy="18" r="1" fill="#185B18"/>
+          <path d="M2 2L18 2M18 2L18 18M18 18L2 18" stroke="#BD0569" stroke-width="0.5" fill="none"/>
+          <circle cx="10" cy="10" r="0.5" fill="#685F63"/>
+          <path d="M6 10L14 10M10 6L10 14" stroke="#185B18" stroke-width="0.3" fill="none"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#circuit)"/>
+    </svg>
+  </div>
 </header>
 
 <!-- Hero Section -->
@@ -1424,12 +1443,13 @@
     </p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <button class="bg-white text-gray-900 hover:bg-secondary px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-        Request Quote
-      </button>
-      <button class="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300">
-        Schedule Consultation
-      </button>
+   <button class="bg-white text-gray-900 hover:bg-secondary px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg mx-auto block"
+           onclick="window.location.href='../about/about_page.html#contact'">
+     Request Quote
+   </button>
+<!--      <button class="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 rounded-2xl text-lg font-semibold transition-all duration-300">-->
+<!--        Schedule Consultation-->
+<!--      </button>-->
     </div>
   </div>
 </section>
@@ -1440,7 +1460,7 @@
     <div class="grid md:grid-cols-4 gap-8">
       <div>
         <div class="flex items-center space-x-2 mb-6">
-          <img src="NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-16 h-16" />
+          <img src="../NETWORKS COMPANY PROFILE/logo.svg" alt="Netsworks Logo" class="w-16 h-16" />
           <span class="text-xl font-bold bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">Netsworks</span>
         </div>
         <p class="text-accent dark:text-gray-300 mb-4">Precision electronics fabrication for the future.</p>
@@ -1461,7 +1481,6 @@
         <ul class="space-y-2 text-accent dark:text-gray-300">
           <li><a href="#" class="hover:text-primary transition-colors">About</a></li>
           <li><a href="#" class="hover:text-primary transition-colors">Careers</a></li>
-          <li><a href="#" class="hover:text-primary transition-colors">News</a></li>
           <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
         </ul>
       </div>
